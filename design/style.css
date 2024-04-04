@@ -1,28 +1,22 @@
 .logo{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 body{
-    width: 990px;
-    margin-left: 280px;
-    margin-right: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-left:15px ;
     padding-right: 15px;
     background-image: url("../pictures/back-cover.jpg");
     background-size: cover;
 }
 .conteneur{
- background-color:hsla(358, 28%, 95%, 0.85);    
+ background-color:hsla(358, 28%, 95%, 0.85);
+ width: 990px;    
 }
-.main-content {
-    height: 96px;
-    width: 278px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .main-content img {
     /* Limitez la taille de l'image pour éviter qu'elle ne dépasse */
@@ -34,12 +28,8 @@ body{
     marging:0;
     padding:0;
 }    
-.main-menu ul {
-border-bottom:3px solid #ededed ;
-}
 .main-menu li {
 display:inline ;
-border:1px solid #060606
 }
 .main-menu a {
     color:#400;
@@ -50,32 +40,43 @@ border:1px solid #060606
 .main-menu a:hover {
     color: #d86c0c;
 }
-.phrase{
-    text-align: right;
+nav li:not(:last-child) {
+    border-right: 1px solid black; /* Bordure verticale à droite de chaque élément de liste sauf le dernier */
 }
 
-article, main {
+.phrase{
+    text-align: right;
+    font-size:10px;
+}
+.date{
+    font-size:10px;
+}
+article, main, {
     display: inline-block;
     display: flex;
 }
 
 article{
-    width: 30%;
+    width: 280px;
     float: left;
 }
-main{
-    width: 70%;
-    float: left;
+main, aside, footer{
+    width: 640px;
+    float: right;
 }
-
+hr{
+    border:none;
+    border-top:1px solid black;
+    margin: 20px 0;
+}
 .vignettes a{
     text-decoration:none;
     color: #b32;
-    margin: 10px; 
+    margin: 40px; 
     flex-direction: row;
 }
 .vignettes img {
-    margin: 1px; /* Espace entre les images */
+    margin: 10 px; /* Espace entre les images */
     display: inline ;
 }
 .vignettes a:hover {
@@ -84,8 +85,8 @@ main{
 .photos{
     height: 150px;
     width: 200px;
-    display: flex;
 }
 footer{
+    padding: 20px;
     text-align: right;
 }
