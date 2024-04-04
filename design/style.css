@@ -1,3 +1,9 @@
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 body{
     width: 990px;
     margin-left: 280px;
@@ -33,6 +39,7 @@ border-bottom:3px solid #ededed ;
 }
 .main-menu li {
 display:inline ;
+border:1px solid #060606
 }
 .main-menu a {
     color:#400;
@@ -46,22 +53,30 @@ display:inline ;
 .phrase{
     text-align: right;
 }
+
+article, main {
+    display: inline-block;
+    display: flex;
+}
+
 article{
-    
-    text-align: left;
+    width: 30%;
+    float: left;
 }
 main{
-    text-align: right;
+    width: 70%;
+    float: left;
 }
-aside{
-    text-align: right;
-}
+
 .vignettes a{
     text-decoration:none;
     color: #b32;
-    display: flex;
-    justify-content: right;
-    align-items: right;
+    margin: 10px; 
+    flex-direction: row;
+}
+.vignettes img {
+    margin: 1px; /* Espace entre les images */
+    display: inline ;
 }
 .vignettes a:hover {
     color: #4c4c4b;
@@ -70,8 +85,6 @@ aside{
     height: 150px;
     width: 200px;
     display: flex;
-    justify-content: right;
-    align-items: right;
 }
 footer{
     text-align: right;
